@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'PodTestKit'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of PodTestKit.'
+  s.summary          = '发布 TestKit'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Weigh156/PodTestKit'
+  s.homepage         = 'https://github.com/github6022244/podTestFramework.git'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Weigh156' => '1563084860@qq.com' }
-  s.source           = { :git => 'https://github.com/Weigh156/PodTestKit.git', :tag => s.version.to_s }
+  s.author           = { 'github6022244' => '1563084860@qq.com' }
+  s.source           = { :git => 'https://github.com/github6022244/podTestFramework.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'PodTestKit/Classes/**/*'
   
@@ -39,4 +39,7 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.vendored_frameworks = 'PodTestKit/Classes/*.framework'
+  s.pod_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
+  s.user_target_xcconfig = { 'ENABLE_BITCODE' => 'NO' }
 end

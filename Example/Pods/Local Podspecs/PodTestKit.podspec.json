@@ -1,0 +1,22 @@
+{
+  "name": "PodTestKit",
+  "version": "0.1.0",
+  "summary": "A short description of PodTestKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Weigh156/PodTestKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Weigh156": "1563084860@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/Weigh156/PodTestKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "PodTestKit/Classes/**/*"
+}
